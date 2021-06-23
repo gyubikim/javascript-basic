@@ -1,4 +1,24 @@
 <!DOCTYPE html>
-<script>
-  document.write("자바스크립트")
-</script>
+
+<head>
+  <script>
+    document.write("자바스크립트")
+  </script>
+  <script src="001.js"></script>
+</head>
+
+<body>
+  <script>
+    document.write("자바스크립트")
+
+    console.log("콘솔창에 출력합니다.");
+  </script>
+  <script src="001.js"></script>
+</body>
+
+<!-- 헤드테그에 써도 되는데 헤드태그에 안쓰고
+바디태그에 쓰는 이유:
+위에서부터 읽기 때문에. 화면 먼저 보이고 스크립트를 먼저 체크하도록
+따라서 습관적으로 body태그 안에서도 제일 밑에 넣는다. 딱 하나만 제외하고.
+근데 화면 그리는데 필요한 자바스크립트라면 당연히 화면이니까
+위에 쓰겠지, -->
