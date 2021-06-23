@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //Object 원조 오브젝트 - 데이터를 담는 측면에 대해
+    //콘솔 등을 오브젝트라고 부르는데
+    //제일 위에 오브젝트가 또 있음
+    //나머지 오브젝트가 원래 오브젝트의 기능을 
+    //상속 받음
+
+    let person = {
+      firstName: "John", //키:밸류,
+      lastName: "Doe",
+      age: 40, //숫자는 ""안씀
+      tel: "01012345678",
+      email: "aaaa@mail.com"
+
+
+    };
+
+    console.log(person.firstName) //(키.밸류)
+    //오브젝트의 키에 특정 값에 접근할 때 첫번째법
+
+    person.age = 41; //나이 바꾸기 다시 쓰면됌
+    console.log(person.age) //출력확인
+
+    console.log(person["firstName"]) //오브젝트의
+    //키에 특정 값에 접근할 때 두번째: 문자값
+
+    key =
+
+      let firstNameKey = "firstName"
+    console.log(person.firstNameKey) // 이거 안됌. 오류남\
+    console.log(person[firstNameKey])
+  </script>
+</body>
+
+</html>
