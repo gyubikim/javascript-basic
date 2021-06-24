@@ -6,8 +6,21 @@
 </head>
 
 <body>
-  <script src="4-04.user_data.js"></script>
-  <script></script>
+  <script src=""></script>
+  <script>
+    function getUserList(gender) {
+      var output = [];
+      for (var user of userList) {
+        if (user.gender == gender) {
+          output.push(user);
+
+        }
+      }
+      return output;
+    }
+    let showUserList = getUserList("male");
+    console.log(showUserList);
+  </script>
 </body>
 
 </html>
