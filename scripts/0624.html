@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script src="4-04.user_data.js"></script>
+
+  <script>
+    //문제1. userList의 데이터에서 gender가 male인 사람만
+    //새 배열 maleUserList에 담고 console창에 출력하세요.
+
+    var maleUserList = [];
+    for (var user of userList) {
+      if (user.gender == "male") {
+        maleUserList.push(user);
+      }
+    }
+
+    console.table(maleUserList)
+  </script>
+</body>
+
+< /html>
