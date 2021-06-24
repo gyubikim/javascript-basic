@@ -7,6 +7,8 @@
 
 <body>
   <script>
+    // inputCoin = 800;
+
     var productList = [{
         name: "솔의눈",
         price: 700
@@ -33,16 +35,19 @@
       },
     ];
 
-    var inputCoin = 800;
-
-    var output = [];
-    for (var drink of productList) {
-      if (drink.price <= inputCoin) {
-        output.push(drink);
+    function getProductList(inputCoin) {
+      var output = [];
+      for (var drink of productList) {
+        if (drink.price <= inputCoin) {
+          output.push(drink);
+        }
       }
+
+      return output;
     }
 
-    console.table(output);
+    let ShowproductList = getProductList(800);
+    console.log(ShowproductList);
   </script>
 </body>
 
