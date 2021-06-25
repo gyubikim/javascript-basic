@@ -8,26 +8,39 @@
 <body>
   <script src="4-04.user_data.js"></script>
   <script>
-    // console.log(userList);
+    console.log(userList);
 
-    // function getUserList(gender, age1, age2) {
-    //   var output = [];
-    //   for (var user of userList) {
-    //     if (user.gender == gender && (user.age <= age1 or들어가는거 뭐지?? user.age <= age2)) {
-    //       output.push(user);
+    function getUserList(gender, age1, age2) {
+      var output = [];
+      for (var user of userList) {
+        if (user.gender == gender && (user.age <= age1 or들어가는거 뭐지 ? ? user.age <= age2)) {
+          output.push(user);
 
-    //     }
-    //   }
-    //   return output;
-    // }
-    // let showUserList = getUserList("male", 24, 30);
-    // console.table(showUserList); 
+        }
+      }
+      return output;
+    }
+    let showUserList = getUserList("male", 24, 30);
+    console.table(showUserList);
   </script>
   <script>
-    function printArray(arr2D) {
-      let lenth1 = arr2D.length; //6
+    var arr = [
+      [1, 2, 3, 4, 5]
+      [3, 12, 33, 24, 15],
+      [4, 7, 12, 3, 9],
+      [12, 32, 56, 23, 90],
+      [5, 9, 7, 21, 19],
+      [5, 9, 7, 21, 19],
+    ];
 
-      for (let i = 0; i < len1; i++)
+    function printArray(arr2D) {
+      let len1 = arr2D.length; //6
+
+      for (let i = 0; i < len1; i++) {
+        arr2D //[1,2,3,4,5]
+
+        let len2 = arr2D[1].length //5 첫 번째 배열의 길이
+      }
     }
 
     printArray(arr);
